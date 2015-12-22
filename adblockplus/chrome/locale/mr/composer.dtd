@@ -1,0 +1,33 @@
+<!ENTITY anchor.end.label "&amp;nपत्ता ओवरनंतर">
+<!ENTITY domainRestriction.label "&amp;dडोमेन वर प्रतिबंधित करा:">
+<!ENTITY collapse.default.no.label "डीफॉल्ट वापरा (नाही)">
+<!ENTITY firstParty.label "&amp;rप्रथम पक्ष केवळ">
+<!ENTITY preferences.label "&amp;Show विद्यमान फिल्टर...">
+<!ENTITY pattern.label "नमुना पहा">
+<!ENTITY thirdParty.label "&amp;tतृतीय पक्षीय केवळ">
+<!ENTITY filter.label "&amp;fनवीन फिल्टर:">
+<!ENTITY collapse.label "&amp;lसंकुचित अवरोधित:">
+<!ENTITY match.warning "आपण यापुढे प्रविष्ट नमुना श्वेतसूचीबद्ध / अवरोधित करणे पत्त्याशी जुळत आहे आणि त्यावर कुठलाही प्रभाव पडणार नाही.">
+<!ENTITY anchor.start.label "&amp;gपत्ता सुरूवातीस">
+<!ENTITY matchCase.label "&amp;mमॅच केस">
+<!ENTITY custom.pattern.label "&amp;cसानुकूल:">
+<!ENTITY unselectAllTypes.label "काहीही निवडा">
+<!ENTITY type.whitelist.label "अपवाद&amp;x नियम">
+<!ENTITY regexp.warning "आपण प्रविष्ट नमुना कार्यक्षमतेने एडब्लॉक प्लस प्रक्रिया केली जाऊ शकत नाही आणि आपला ब्राउझिंग अनुभव खाली धीमा शकते जे नियमित अभिव्यक्ती म्हणून स्पष्टीकरण दिले जाईल. आपण नियमित अभिव्यक्ती वापरण्याची इच्छा नसेल तर, नमुना शेवटी एक तारा (*) जोडा.">
+<!ENTITY dialog.title "एडब्लॉक प्लस फिल्टर नियम जोडा">
+<!ENTITY basic.label "मूलभूत दृश्य">
+<!ENTITY type.filter.label "&amp;Bफिल्टर अवरोधित करते">
+<!ENTITY types.label "प्रकारच्या लागू:">
+<!ENTITY shortpattern.warning "आपण प्रविष्ट नमुना अनुकूल खूप कमी आहे आणि आपला ब्राउझिंग अनुभव खाली धीमा शकते. आपण एडब्लॉक प्लस अधिक कार्यक्षमतेने फिल्टर प्रक्रिया करण्याची परवानगी या फिल्टर साठी दीर्घ स्ट्रिंग निवडा शिफारसीय आहे की.">
+<!ENTITY collapse.yes.label "होय">
+<!ENTITY anchors.label "नमुना केवळ स्वीकारा:">
+<!ENTITY collapse.default.yes.label "डीफॉल्ट वापरा (होय)">
+<!ENTITY domainRestriction.help "(|) एक बार ओळ विभक्त एक किंवा अधिक डोमेन निर्देशीत करण्यासाठी या पर्यायचा वापर करा. फिल्टर केवळ निवडलेले डोमेन (र्स) वर लागू होईल. डोमेन नाव आधी एक ही खूण (~) फिल्टर की डोमेनवर लागू केले जाणार नाहीत दर्शवतो.">
+<!ENTITY accept.label "फिल्टर जोडा">
+<!ENTITY options.label "पर्याय">
+<!ENTITY disabled.warning "Adblock प्लस सध्या अक्षम आहे. आपण अद्याप फिल्टर जोडू शकता परंतु आपण [link]Adblock प्लस[/link] सक्षम करेपर्यंत ती लागू होणार नाही.">
+<!ENTITY anchor.start.flexible.label "&amp;gडोमेन नाव सुरूवातीस">
+<!ENTITY collapse.no.label "नाही">
+<!ENTITY selectAllTypes.label "सर्व निवडा">
+<!ENTITY advanced.label "प्रगत दृश्य">
+<!ENTITY pattern.explanation "नमुना पत्ता काही भाग असू शकते; चौफुली (*) हे वाइल्डकार्ड म्हणून कार्य करते. फिल्टर केवळ प्रदान शैलीशी जुळणाऱ्या पत्ते लागू करण्यात येणार आहे.">

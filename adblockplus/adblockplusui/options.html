@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--
+  - This file is part of Adblock Plus <https://adblockplus.org/>,
+  - Copyright (C) 2006-2015 Eyeo GmbH
+  -
+  - Adblock Plus is free software: you can redistribute it and/or modify
+  - it under the terms of the GNU General Public License version 3 as
+  - published by the Free Software Foundation.
+  -
+  - Adblock Plus is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  - GNU General Public License for more details.
+  -
+  - You should have received a copy of the GNU General Public License
+  - along with Adblock Plus.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title class="i18n_options_page_title"></title>
+    <link rel="stylesheet" href="skin/common.css">
+    <link rel="stylesheet" href="skin/options.css">
+    <style id="search-style"></style>
+    <script src="ext/common.js"></script>
+    <script src="ext/content.js"></script>
+    <script src="common.js"></script>
+    <script src="i18n.js"></script>
+    <script src="options.js"></script>
+  </head>
+  <body data-tab="general">
+    <!-- Navigation sidebar -->
+    <div id="nav-sidebar">
+      <div id="fixed-sidebar" class="fixed">
+        <header id="page-title">
+          <p class="i18n_options_page_header_1"></p>
+          <h1 class="i18n_options_page_header_2"></h1>
+        </header>
+        <nav>
+          <ul class="tabs vertical">
+            <li id="tab-general" data-action="switch-tab" data-tab="general" class="active">
+              <a class="i18n_options_tab_general"></a>
+              <span class="icon"></span>
+            </li>
+            <li id="tab-advanced" data-action="switch-tab" data-tab="advanced">
+              <a class="i18n_options_tab_advanced"></a>
+              <span class="icon"></span>
+            </li>
+            <li id="tab-help" data-action="switch-tab" data-tab="help">
+              <a class="i18n_options_tab_help"></a>
+              <span class="icon"></span>
+            </li>
+          </ul>
+        </nav>
+        <a id="link-version">
+          <span class="i18n_options_version"></span>
+          <span id="abp-version"></span>
+        </a>
+        <footer>
+          <ul class="tabs vertical bottom">
+            <li id="tab-share">
+              <a class="i18n_options_tab_share"></a>
+              <span class="icon"></span>
+            </li>
+            <li id="tab-contribute">
+              <a class="i18n_options_tab_contribute"></a>
+              <span class="icon"></span>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <div id="tab-content">
+      <div id="content-wrapper">
+        <div id="dialog-background"></div>
+
+        <!-- General tab content -->
+        <div id="content-general">
+          <div>
+            <h1 class="i18n_options_blocking_title"></h1>
+            <div class="hbox">
+              <div id="blocking-languages">
+                <div class="option-name">
+                  <span class="i18n_options_language_title"></span>
+                  <div class="tooltip">
+                    <span class="i18n_options_readMore"></span>
+                    <div role="tooltip">
+                      <img src="skin/tooltips/block.png" alt="" />
+                      <p class="i18n_options_language_title_tooltip"></p>
+                      <div class="notes">
+                        <p class="i18n_options_language_title_tooltip_notes_1"></p>
+                        <p class="i18n_options_language_title_tooltip_notes_2"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul id="blocking-languages-table" class="table list">
+                  <template>
+                    <input type="checkbox" class="control" />
+                    <span class="display"></span>
+                  </template>
+                </ul>
+                <div class="controls">
+                  <button data-action="open-dialog" data-dialog="language">
+                    <span class="icon icon-add"></span>
+                    <span class="i18n_options_language_add"></span>
+                  </button>
+                </div>
+              </div>
+              <div id="further-blocking">
+                <div class="option-name">
+                  <strong class="i18n_options_furtherBlocking_title"></strong>
+                  <div class="tooltip">
+                    <span class="i18n_options_readMore"></span>
+                    <div role="tooltip" class="flip-vertical">
+                      <img src="skin/tooltips/more.png" alt="" />
+                      <p class="i18n_options_furtherBlocking_title_tooltip"></p>
+                    </div>
+                  </div>
+                </div>
+                <div id="custom-wrapper">
+                  <ul id="recommend-list-table" class="table list">
+                    <template>
+                      <input type="checkbox" class="control" />
+                      <span class="display"></span>
+                      <span class="popular"></span>
+                    </template>
+                  </ul>
+                  <ul id="custom-list-table" class="table list">
+                    <template>
+                      <input type="checkbox" class="control" />
+                      <span class="display"></span>
+                    </template>
+                  </ul>
+                </div>
+                <div class="controls">
+                  <button data-action="open-dialog" data-dialog="custom">
+                    <span class="icon icon-add"></span>
+                    <span class="i18n_options_furtherBlocking_add"><span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="i18n_options_exceptions_title"></h1>
+            <div class="hbox">
+              <div id="acceptable-ads">
+                <div class="option-name">
+                  <strong class="i18n_options_acceptableAds_title"></strong>
+                  <div class="tooltip">
+                    <span class="i18n_options_readMore"></span>
+                    <div role="tooltip">
+                      <img src="skin/tooltips/acceptable-ads.png" alt="" />
+                      <p class="i18n_options_acceptableAds_title_tooltip_1"></p>
+                      <p class="i18n_options_acceptableAds_title_tooltip_2"></p>
+                      <p class="i18n_options_acceptableAds_title_tooltip_3"></p>
+                    </div>
+                  </div>
+                </div>
+                <ul id="acceptableads-table" class="table list">
+                  <template>
+                    <input type="checkbox" class="control" />
+                    <span class="display"></span>
+                  </template>
+                </ul>
+              </div>
+              <div id="whitelisting">
+                <div class="option-name">
+                  <strong class="i18n_options_whitelisted_title"></strong>
+                  <div class="tooltip">
+                    <span class="i18n_options_readMore"></span>
+                    <div role="tooltip" class="flip-vertical">
+                      <img src="skin/tooltips/whitelisted.png" alt="" />
+                      <p class="i18n_options_whitelisted_title_tooltip_1"></p>
+                      <p class="i18n_options_whitelisted_title_tooltip_2"></p>
+                      <div class="notes">
+                        <p class="i18n_options_whitelisted_title_tooltip_notes"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul id="whitelisting-table" class="table list">
+                  <template>
+                    <button class="delete control"></button>
+                    <span class="display"></span>
+                  </template>
+                </ul>
+                <div class="controls">
+                  <button data-action="edit-domain-exception">
+                    <span class="icon icon-add"></span>
+                    <span class="i18n_options_whitelisted_add"></span>
+                  </button>
+                  <div>
+                    <span class="icon icon-add" data-action="add-domain-exception"></span>
+                    <input type="text" id="whitelisting-textbox" placeholder="www.example.com" />
+                    <span class="icon icon-enter" data-action="add-domain-exception"></span>
+                  </div>
+                  <div>
+                    <button id="whitelisting-add-button" class="button-add" data-action="add-domain-exception">
+                      +<span class="i18n_options_button_add"></span>
+                    </button>
+                    <span></span>
+                    <button class="i18n_options_button_cancel cancel-button" data-action="cancel-domain-exception"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advanced tab content -->
+        <div id="content-advanced">
+          <div>
+            <h1><span class="i18n_options_tweaks_title"></span><a class="i18n_options_readMore tooltip" href="#"></a></h1>
+            <ul class="table" style="width: auto;">
+              <li>
+                <input type="checkbox" id="easylist"/><span id="block-element-explanation" class="i18n_options_tweaks_blockElement"></span></li>
+            </ul>
+          </div>
+          <div>
+            <h1><span class="i18n_options_blockingList_title"></span><a class="i18n_options_readMore tooltip" href="#" target="_blank"></a></h1>
+            <ul id="blocking-list-tabs" class="tabs horizontal">
+              <li class="i18n_options_tab_overview active" data-show="blocking-list-overview"></li><li class="i18n_options_tab_ownList" data-show="custom-filters"></li>
+            </ul>
+            <div id="blocking-list">
+              <div id="blocking-list-overview">
+                <ul class="table cols" style="width: auto;">
+                  <li class="col-name"><span class="i18n_options_tableCol_name"></span><span class="i18n_options_tableCol_description"></span><span class="i18n_options_tableCol_date"></span></li>
+                  <li><input type="checkbox" id="easylist"/><span>Easylist</span><span>Adblocking english sites</span><span>15 March 14 - 10:31</span></li>
+                  <li><input type="checkbox" id="easylist+de"/><span>Easylist Germany + Easylist</span><span>Adblocking english + german sites</span><span>15 March 14 - 10:31</span></li>
+                  <li><input type="checkbox" id="annoyance-fb"/><span>Facebook annoyance blocker</span><span>Blocks Facebook annoyances</span><span>15 March 14 - 10:31</span></li>
+                  <li><input type="checkbox" id="annoyance-youtube"/><span>Facebook annoyance blocker</span><span>Blocks Facebook annoyances</span><span>15 March 14 - 10:31</span></li>
+                  <li><input type="checkbox" id="own-list"/><span>Own blocking list</span><span>Your own blocking list</span><span><a href="#">edit your blocking list</a></span></li>
+                </ul>
+                <div class="controls">
+                  <button>
+                    <span class="icon icon-add"></span><span class="i18n_options_blockingList_add"></span>
+                  </button>
+                  <button>
+                    <span class="icon icon-update"></span><span class="i18n_options_blockingList_update"></span>
+                  </button>
+                </div>
+              </div>
+              <div id="custom-filters">
+                <h2 id="custom-filters-header" class="i18n_options_customFilters_title"></h2>
+                <div id="custom-filters-wrapper">
+                  <div id="custom-filters-list-wrapper">
+                    <ul id="custom-filters-table" class="table list">
+                      <template>
+                        <span class="display"></span>
+                      </template>
+                    </ul>
+                    <form id="custom-filters-add" class="controls">
+                      <input type="text"/>
+                      <button class="i18n_options_button_add" type="submit"></button>
+                    </form>
+                  </div>
+                  <textarea id="custom-filters-raw"></textarea>
+                </div>
+                <div id="custom-filters-edit-wrapper" class="controls">
+                  <button id="custom-filters-show-edit" data-action="edit-custom-filters">
+                    <span class="icon icon-edit"></span>
+                    <span class="i18n_options_customFilter_edit"></span>
+                  </button>
+                  <div id="custom-filters-raw-controls">
+                    <button data-action="cancel-custom-filters">
+                      <span class="icon icon-edit"></span>
+                      <span class="i18n_options_customFilter_list"></span>
+                    </button>
+                    <button id="custom-filters-raw-save" data-action="save-custom-filters">
+                      <span class="icon icon-edit"></span>
+                      <span class="i18n_options_customFilter_save"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help tab content -->
+        <div id="content-help">
+          <h1 class="i18n_options_faq_title"></h1>
+          <p class="i18n_options_faq_description"></p>
+          <p>
+             <a class="i18n_options_faq_title" href="#" target="_blank"></a>
+          </p>
+          <h1 class="i18n_options_forum_title"></h1>
+          <p class="i18n_options_forum_description"></p>
+          <p>
+             <a class="i18n_options_forum_link" href="#" target="_blank"></a>
+          </p>
+          <h1 class="i18n_options_media_title"></h1>
+          <p class="i18n_options_media_description"></p>
+          <p>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Google+</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialog -->
+    <div id="dialog" role="dialog" aria-hidden="true">
+      <header>
+        <span id="dialog-title">
+          <span id="dialog-title-custom" class="i18n_options_dialog_custom_title"></span>
+          <span id="dialog-title-language" class="i18n_options_dialog_language_title"></span>
+          <span id="dialog-title-predefined" class="i18n_options_dialog_predefined_title"></span>
+        </span>
+        <button id="dialog-close" class="i18n_options_close focus-first" data-action="close-dialog"></button>
+      </header>
+      <div id="dialog-body" class="content">
+        <!-- Add language subscription -->
+        <div id="dialog-content-language" class="dialog-content">
+          <div class="dialog-content-block">
+            <h3 class="i18n_options_dialog_language_added"></h3>
+            <ul id="blocking-languages-dialog-table" class="table list">
+              <template>
+                <span class="display"></span>
+              </template>
+            </ul>
+          </div>
+          <div id="other-language" class="dialog-content-block">
+            <div>
+              <label for="find-language" class="i18n_options_dialog_language_other"></label>
+              <input type="search" id="find-language" class="default-focus" />
+            </div>
+            <ul id="all-lang-table" class="table list">
+              <template>
+                <button class="button-add control">
+                  +<span></span>
+                </button>
+                <span class="display"></span>
+              </template>
+            </ul>
+          </div>
+        </div>
+        <!-- Add custom subscription -->
+        <div id="dialog-content-custom" class="dialog-content">
+          <div class="dialog-content-block">
+            <div>
+              <label for="blockingList-textbox" class="i18n_options_dialog_custom_subscription_title"></label>
+              <input id="blockingList-textbox" type="text" class="default-focus" placeholder="www.example.com/blockinglist.txt" />
+            </div>
+            <button class="i18n_options_dialog_custom_import" data-action="import-subscription"></button>
+          </div>
+          <div class="dialog-content-block">
+            <h3 class="i18n_options_dialog_edit_own_list"></h3>
+            <button class="i18n_options_dialog_create_own_list" data-action="close-dialog,switch-tab,edit-custom-filters" data-tab="advanced"></button>
+          </div>
+        </div>
+        <!-- Add predefined subscription -->
+        <div id="dialog-content-predefined" class="dialog-content">
+          <div class="dialog-content-block">
+            <h3></h3>
+            <div class="url"></div>
+            <button class="i18n_options_dialog_predefined_confirm default-focus" data-action="add-predefined-subscription"></button>
+          </div>
+        </div>
+      </div>
+      <!-- Placeholder element to determine when to wrap focus around -->
+      <span class="focus-last" tabindex="0"></span>
+    </div>
+  </body>
+</html>

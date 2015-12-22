@@ -1,0 +1,6 @@
+repo: 3926c055e81d4c11d3249479e18a92ce1bebb5cc
+node: 0b8901d596b00ec83ad2d8eddf84d09379c1a1d2
+branch: default
+latesttag: ABP_WATCHER_1_2_3_RELEASE
+latesttagdistance: 187
+changessincelatesttag: 187

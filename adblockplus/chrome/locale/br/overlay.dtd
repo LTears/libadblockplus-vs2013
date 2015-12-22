@@ -1,0 +1,29 @@
+<!ENTITY notification.button.no "&amp;Nann">
+<!ENTITY sync.label "&amp;Goubredañ arventennoù Adblock Plus">
+<!ENTITY whitelist.site.label "Diweredekaat evit ?1?">
+<!ENTITY filters.label "&amp;Gwellvezioù ar sil">
+<!ENTITY disable.label "Diweredekaat pep lec'h">
+<!ENTITY objecttab.title "Stankañ">
+<!ENTITY objecttab.tooltip "Klikañ amañ hag Adblock Plus a stanko an elfenn-se">
+<!ENTITY menuitem.label "Dibaboù Adblock Plus">
+<!ENTITY objecttabs.label "Diskouez un tikedenn evit Flash ha Java">
+<!ENTITY sendReport.label "&amp;Danevelliñ ur gudenn war ar bajenn">
+<!ENTITY whitelist.page.label "Diweredekaat evit ar bajenn-se nemetken">
+<!ENTITY context.image.label "Stankañ ar skeudenn gant Adblock">
+<!ENTITY notification.button.yes "&amp;Ya">
+<!ENTITY opensidebar.label "Digeriñ al listenn elfennoù silabl">
+<!ENTITY notification.button.close "&amp;Serriñ">
+<!ENTITY contribute.label "Kenoberiañ da Adblock Plus">
+<!ENTITY toolbarbutton.label "Adblock Plus">
+<!ENTITY context.frame.label "Stankañ ar framm gant Adblock">
+<!ENTITY blocked.tooltip "Eflennoù stanket war ar bajenn :">
+<!ENTITY showinstatusbar.label "Diskouez er barrenn stad">
+<!ENTITY sidebar.title "Elfennoù silabl er bajenn a-vremañ">
+<!ENTITY options.label "Dibaboù">
+<!ENTITY context.object.label "Stankañ an elfenn gant Adblock">
+<!ENTITY context.removeWhitelist.label "Adblock Plus : Gweredekaat adnevez evit ar bajenn-se">
+<!ENTITY filters.tooltip "Siloù ar muiañ implijet :">
+<!ENTITY closesidebar.label "Serriñ al listenn elfennoù silabl">
+<!ENTITY showintoolbar.label "Diskouez er barrenn ostilh">
+<!ENTITY status.tooltip "Stad :">
+<!ENTITY context.media.label "Stankañ videoù/son gant Adblock">
